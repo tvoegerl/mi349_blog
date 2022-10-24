@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Tatiana's Blog Page</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <h1>My Blog Page</h1>
+        <p>Random Thoughts by Tatiana</p>
+        <!--Navbar-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <h2>Contact Form</h2>
+        <form>
+            <div class="contact-form">
+                <label for="name"> Name:
+                    <input id="name" type="text">
+                </label>
+            </div>
+            <div class="contact-form">
+                <label for="email"> Email Address:
+                    <input id="email" type="email">
+                </label>
+            </div>
+            <div class="contact-form">
+                <label for="reason"> Reason for Contact:
+                    <input id="reason" list="reasons-for-contact">
+                </label>
+                <datalist id="reasons-for-contact">
+                    <option value="Saying hi"></option>
+                    <option value="Looking for a contractor"></option>
+                    <option value="Interested in an interview"></option>
+                    <option value="Other - Please specify below"></option>
+                </datalist>
+            </div>
+            <div class="contact-form">
+                <label for="open-comment">Open Comment:
+                    <br>
+                    <textarea id="open-comment" rows="5" cols="45"></textarea>
+                </label>
+            </div>
+            <div class="contact-form">
+                <button>Submit Form</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>

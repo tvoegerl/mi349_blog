@@ -10,21 +10,23 @@
     <!--Header-->
     <header>
         <h1>My Blog Page</h1>
+        <p>Random Thoughts by Tatiana</p>
+        <!--Navbar-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!--Navbar-->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-
     <section class="blog-section">
+        <h2>The Blogs</h2>
         <!--Blog #1-->
         <article class="blog">
-            <h2 class="blog-title">My Vacation in the Netherlands</h2>
-            <p class="author-info">Author: <a class="author" href="mailto:voegerlt@msu.edu">Tatiana Voegerl</a></p>
+            <h3 class="blog-title">My Vacation in the Netherlands</h3>
+            <address class="author-info">Author: <a rel="author-info" href="mailto:voegerlt@msu.edu">Tatiana Voegerl</a></address>
             <p class="date-info">Published Date: <time datetime="2022-10-15 16:30">10/15/2022</time></p>
             <p class="blog-content">
                 I have traveled to a lot of different places. More specifically, I have been to 9 different countries and 9 different states. 
@@ -41,13 +43,36 @@
                 exist in the Netherlands, since we traveled to the different cities by boat, instead of using a more traditional travel method. 
             </p>
             <img id="netherlands-image" src="images/netherlands.jfif" alt="Canal in Amsterdam">
+            <h4>Other places I have visited</h4>
+            <table>
+                <tr>
+                    <th>Location</th>
+                    <th>Year Visited</th>
+                    <th>My Rating</th>
+                </tr>
+                <tr>
+                    <td>Berlin, Germany</td>
+                    <td>2015</td>
+                    <td>4.5/5</td>
+                </tr>
+                <tr>
+                    <td>Prague, Czech Republic</td>
+                    <td>2013</td>
+                    <td>5/5</td>
+                </tr>
+                <tr>
+                    <td>Paris, France</td>
+                    <td>2012</td>
+                    <td>1/5</td>
+                </tr>
+            </table>
         </article>
     
 
         <!--Blog #2-->
         <article class="blog">
-            <h2 class="blog-title">My experience at the Grace Hopper Celebration</h2>
-            <p class="author-info">Author: <a class="author" href="mailto:voegerlt@msu.edu">Tatiana Voegerl</a></p>
+            <h3 class="blog-title">My experience at the Grace Hopper Celebration</h3>
+            <address class="author-info">Author: <a rel="author-info" href="mailto:voegerlt@msu.edu">Tatiana Voegerl</a></address>
             <p class="date-info">Published Date: <time datetime="2022-10-15 17:00">10/15/2022</time></p>
             <p class="blog-content">
                 Every year, Anita B org hosts the Grace Hopper Celebration, a conference meant to inspire women and strengthen connections 
@@ -71,6 +96,16 @@
             </p>
             <img id="ghc-image" src="images/ghc.png" alt="Grace Hopper Celebration Logo">
         </article>
+    </section>
+
+    <section class="newsletter-signup">
+        <h2>Newsletter</h2>
+        <form>
+            <label>Sign up for our newsletter:
+                <input type="text">
+            </label>
+            <button>Subscribe</button>
+        </form>
     </section>
 </body>
 </html>
