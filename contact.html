@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contact - Tatiana's Blog Page</title>
 </head>
 <body>
@@ -14,9 +15,9 @@
         <!--Navbar-->
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a title="navbar" href="index.html">Home</a></li>
+                <li><a title="navbar" href="about.html">About</a></li>
+                <li><a title="navbar" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -46,10 +47,11 @@
                 </datalist>
             </div>
             <div class="contact-form">
-                <label for="open-comment">Open Comment:
-                    <br>
-                    <textarea id="open-comment" rows="5" cols="45"></textarea>
-                </label>
+                <p id="label-p">
+                    <label for="open-comment">Open Comment:</label>
+                </p>
+                
+                <textarea id="open-comment" rows="5" cols="45"></textarea>
             </div>
             <div class="contact-form">
                 <button>Submit Form</button>
