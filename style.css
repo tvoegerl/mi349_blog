@@ -12,6 +12,16 @@ body {
     background: #fff;
 }
 
+header {
+    background: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-bottom: 7px;
+    padding-top: 3px;
+    border-bottom: 3px solid #242424;
+}
+
 h1 {
     font-size: 3em;
     margin: 0;
@@ -22,7 +32,7 @@ p {
 }
 
 img {
-    max-width: 20%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -48,19 +58,137 @@ address a {
     color: #242424;
 }
 
+figcaption {
+    font-size: 12px;
+    margin: 0px;
+    padding-bottom: 2px;
+    text-align: center;
+    font-style: italic;
+}
+
 /* id selector */
 #blog-section {
     border-top: 1px dotted #ccc;
 }
 
-#label-p {
-    line-height: normal;
-    margin: 0;
+#bio-image {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    max-height: 12rem;
 }
 
 /* class selector */
 .blog-post {
     border-bottom: 1px dotted #ccc;
+}
+
+.blog-img {
+    margin:0;
+    padding:0;
+    max-width: 20%;
+    float: left;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.bio-img {
+    margin:0;
+    padding:0;
+    max-width: 20%;
+    float: right;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.contact-section {
+    padding: 30px 0 50px 0;
+    text-align: center;
+}
+
+h2.contact-header {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 880px;
+    height: 450px;
+    background: #e3e3e3;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.reason, .comment {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.reason label, .comment label {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.id {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.name, .email {
+    display: inline-block;
+    width: 45%;
+}
+
+.name label, .email label {
+    display: block;
+        padding: 0;
+        margin: 0;
+}
+
+input[id="email"], input[id="name"] {
+    width: 100%;
+    height: 40px;
+}
+
+.subject {
+    height: 62px;
+    
+}
+
+input[id="reason"] {
+    width: 100%;
+    height: 40px;
+}
+
+.comment textarea{
+    width: 100%;
+    resize: none;
+}
+
+.submit button {
+    margin-right: 80px;
+    float: right;
+    background: #80bfa5;
+    padding: 8px 77px;
+    border: 1px solid #80bfa5;
+    box-shadow: 0 0 5px #4f5252;
+}
+
+.submit button:hover {
+    background: none;
+    border: 1px solid #4f5252;
 }
 
 /* attribute selector */
@@ -85,3 +213,4 @@ a:hover {
 a:active {
     text-decoration: underline;
 }
+

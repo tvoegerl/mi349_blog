@@ -23,22 +23,21 @@
     </header>
 
     <section class="contact-section">
-        <h2>Contact Form</h2>
-        <form>
-            <div class="contact-form">
-                <label for="name"> Name:
+        <h2 class="contact-header">Contact Form</h2>
+        <form class="contact-form">
+            <div class="id">
+                <div class="name">
+                    <label for="name"> Name</label>
                     <input id="name" type="text">
-                </label>
-            </div>
-            <div class="contact-form">
-                <label for="email"> Email Address:
+                </div>
+                <div class="email">
+                    <label for="email"> Email Address</label>
                     <input id="email" type="email">
-                </label>
+                </div>
             </div>
-            <div class="contact-form">
-                <label for="reason"> Reason for Contact:
-                    <input id="reason" list="reasons-for-contact">
-                </label>
+            <div class="reason">
+                <label for="reason"> Reason for Contact</label>
+                <input id="reason" list="reasons-for-contact">
                 <datalist id="reasons-for-contact">
                     <option value="Saying hi"></option>
                     <option value="Looking for a contractor"></option>
@@ -46,15 +45,12 @@
                     <option value="Other - Please specify below"></option>
                 </datalist>
             </div>
-            <div class="contact-form">
-                <p id="label-p">
-                    <label for="open-comment">Open Comment:</label>
-                </p>
-                
+            <div class="comment">
+                <label for="open-comment">Open Comment</label>
                 <textarea id="open-comment" rows="5" cols="45"></textarea>
             </div>
-            <div class="contact-form">
-                <button>Submit Form</button>
+            <div class="submit">
+                <button type="submit">Submit Form</button>
             </div>
         </form>
     </section>
