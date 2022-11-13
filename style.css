@@ -153,8 +153,8 @@ h2.contact-header {
 
 .name label, .email label {
     display: block;
-        padding: 0;
-        margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 input[id="email"], input[id="name"] {
@@ -178,7 +178,7 @@ input[id="reason"] {
 }
 
 .submit button {
-    margin-right: 80px;
+    margin-right: 10%;
     float: right;
     background: #80bfa5;
     padding: 8px 77px;
@@ -214,3 +214,29 @@ a:active {
     text-decoration: underline;
 }
 
+/* Media Query*/
+@media screen and (max-width: 400px) {
+    body {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .name, .email {
+        display: block;
+        width: 100%;
+    }
+
+    .submit button {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .id {
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+    }
+
+    .name {
+        padding-bottom: 5px;
+    }
+}
